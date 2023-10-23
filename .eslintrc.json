@@ -13,6 +13,7 @@
           { "path": "styled-components" },
           { "path": "@hookform" },
           { "path": "zod" },
+          { "path": "phosphor-react" },
           { "path": "react-toastify" }
         ],
         "Libs": [{ "path": "lib" }],
