@@ -4,8 +4,15 @@ import { ReactElement } from 'react';
 // Components
 import { DefaultLayout } from 'components/layout';
 
-const Home = (): ReactElement => {
-  return <DefaultLayout>Hello World</DefaultLayout>;
+// Templates
+import { Home } from 'templates';
+
+const App = (): ReactElement => {
+  return (
+    <DefaultLayout>
+      <Home />
+    </DefaultLayout>
+  );
 };
 
-export default Home;
+export default App;

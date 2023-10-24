@@ -24,6 +24,7 @@ export const HeaderContainer = styled.header`
           font-family: ${theme.fonts.logoFont};
           font-size: ${theme.textSizes['logo-l']};
           color: ${theme.colors['base-logo']};
+          font-weight: 400;
         }
 
         &__search {

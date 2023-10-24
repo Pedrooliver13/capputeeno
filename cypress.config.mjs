@@ -12,8 +12,8 @@ export default defineConfig({
     },
   },
   e2e: {
-    specPattern: 'cypress/tests/**/*.cy.{js,jsx,ts,tsx}',
-    baseUrl: 'http://localhost:3000/',
+    specPattern: 'cypress/e2e/**/*.cy.{js,jsx,ts,tsx}',
+    baseUrl: 'http://localhost:3000',
     supportFile: false,
     setupNodeEvents(on, config) {
       // implement node event listeners here
