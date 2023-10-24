@@ -23,7 +23,7 @@ export const GlobalStyle = createGlobalStyle`
 
   :focus {
     outline: 0;
-    box-shadow: 0 0 0 2px ${(props): string => props.theme.colors.yellow};
+    box-shadow: 0 0 0 2px ${(props): string => props.theme.colors.gray};
   }
 
   body {

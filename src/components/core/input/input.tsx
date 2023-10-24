@@ -9,7 +9,9 @@ export const Input = (): ReactElement => {
   return (
     <Styled.InputContainer>
       <input type="text" placeholder="Procurando algo específico?" />
-      <MagnifyingGlassIcon size={24} />
+      <button type="submit">
+        <MagnifyingGlassIcon size={24} />
+      </button>
     </Styled.InputContainer>
   );
 };
