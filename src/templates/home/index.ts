@@ -1,1 +1,2 @@
-export { Home } from 'templates/home/home';
+// Templates
+export { HomeTemplate } from 'templates/home/home';

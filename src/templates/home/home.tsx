@@ -6,13 +6,14 @@ import Link from 'next/link';
 
 // Components
 import { Card, Pagination } from 'components/core';
+import { DefaultLayout } from 'components/layout';
 
 // Styles
 import * as Styled from './styles';
 
-export const Home = (): ReactElement => {
+export const HomeTemplate = (): ReactElement => {
   return (
-    <>
+    <DefaultLayout>
       <Styled.CategoryContainer className="container">
         <ul>
           <li className="active">
@@ -30,9 +31,7 @@ export const Home = (): ReactElement => {
           <option value="">Organizar por</option>
         </select>
       </Styled.CategoryContainer>
-
       <Pagination />
-
       <Styled.ProductsList className="container">
         <Card />
         <Card />
@@ -70,6 +69,6 @@ export const Home = (): ReactElement => {
         </div> */}
       </Styled.ProductsList>
       <Pagination />
-    </>
+    </DefaultLayout>
   );
 };
