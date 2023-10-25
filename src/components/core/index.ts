@@ -5,3 +5,4 @@ export * from 'components/core/pagination';
 
 // Fields
 export * from 'components/core/input';
+export * from 'components/core/button';

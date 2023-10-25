@@ -3,18 +3,18 @@ import { ReactElement } from 'react';
 import Head from 'next/head';
 
 // Templates
-import { HomeTemplate } from 'templates';
+import { ShowTemplate } from 'templates';
 
-const App = (): ReactElement => {
+const Show = (): ReactElement => {
   return (
     <>
       <Head>
         <title>Capputeeno - Site de e-commerce.</title>
       </Head>
 
-      <HomeTemplate />
+      <ShowTemplate />
     </>
   );
 };
 
-export default App;
+export default Show;

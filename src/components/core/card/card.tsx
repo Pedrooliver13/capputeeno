@@ -12,7 +12,7 @@ export const Card = (): ReactElement => {
   const [isLoadingImage, setIsLoadingImage] = useState(true);
 
   return (
-    <Styled.CardContainer href={'/'}>
+    <Styled.CardContainer href={'/show'}>
       <div className="image">
         {isLoadingImage && <Skeleton height={300} className="skeleton" />}
 
