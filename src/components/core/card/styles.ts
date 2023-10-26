@@ -29,6 +29,10 @@ export const CardContainer = styled(Link)`
         width: 0;
       }
 
+      .skeleton {
+        top: -4px;
+      }
+
       img,
       .skeleton {
         position: relative;
