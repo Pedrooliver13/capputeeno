@@ -9,7 +9,6 @@ import StyledComponentsRegistry from 'lib/registry';
 // Styles
 import { GlobalStyle } from 'styles/global';
 import { defaultTheme } from 'styles/theme/default';
-import 'react-loading-skeleton/dist/skeleton.css';
 
 interface DefaultProviderProps {
   children: ReactNode;

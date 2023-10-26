@@ -6,6 +6,7 @@ import Image from 'next/image';
 import Skeleton from 'react-loading-skeleton';
 
 // Styles
+import 'react-loading-skeleton/dist/skeleton.css';
 import * as Styled from './styles';
 
 export const Card = (): ReactElement => {
@@ -23,7 +24,7 @@ export const Card = (): ReactElement => {
           width={256}
           height={300}
           loading="lazy"
-          onLoadingComplete={() => setIsLoadingImage(false)}
+          // onLoadingComplete={() => setIsLoadingImage(false)}
         />
       </div>
       <div className="info">
