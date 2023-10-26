@@ -1,5 +1,7 @@
+'use client';
+
 // Packages
-import { createGlobalStyle, css } from 'styled-components';
+import { createGlobalStyle } from 'styled-components';
 
 // Styles
 import { Container } from 'styles/container';
@@ -29,6 +31,7 @@ export const GlobalStyle = createGlobalStyle`
   body {
     background-color: ${({ theme }): string => theme.colors.background};
     color: ${({ theme }): string => theme.colors['base-text']};
+    font-weight: 400;
     --webkit-font-smoothing: antialised;
   }
 
@@ -40,7 +43,7 @@ export const GlobalStyle = createGlobalStyle`
   input,
   textarea,
   button {
-    font-weight: 800;
+    font-weight: 400;
     font-family: ${({ theme }): string => theme.fonts.default};
     font-size: ${({ theme }): string => theme.textSizes['text-m']};
   }

@@ -1,3 +1,5 @@
+'use client';
+
 // Packages
 import { css } from 'styled-components';
 

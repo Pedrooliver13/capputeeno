@@ -1,3 +1,5 @@
+'use client';
+
 export const defaultTheme = {
   colors: {
     white: '#FFF',
@@ -43,7 +45,7 @@ export const defaultTheme = {
     XL: '1200px',
   },
   fonts: {
-    default: "'Saira', sans-serif;",
-    logoFont: "'Saira Stencil One', sans-serif;",
+    default: 'var(--font-saira), sans-serif;',
+    logoFont: 'var(--font-stencil-one), sans-serif;',
   },
 };

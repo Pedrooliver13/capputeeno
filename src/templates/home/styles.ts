@@ -11,13 +11,17 @@ export const CategoryContainer = styled.div`
     gap: 20px;
 
     @media (max-width: ${theme.breakpoints.MD}) {
-      display: none;
+      justify-content: flex-end;
     }
 
-    ul {
+    ul.category {
       display: flex;
       align-items: center;
       gap: 20px;
+
+      @media (max-width: ${theme.breakpoints.MD}) {
+        display: none;
+      }
 
       li {
         position: relative;

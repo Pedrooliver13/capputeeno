@@ -10,10 +10,14 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: Styled.ButtonStyleType;
 }
 
-export const Button = ({ children, ...props }: ButtonProps): ReactElement => {
+export const Button = ({
+  children,
+  startIcon,
+  ...props
+}: ButtonProps): ReactElement => {
   return (
     <Styled.ButtonContainer {...props}>
-      {props.startIcon && props.startIcon}
+      {startIcon && startIcon}
       {children}
     </Styled.ButtonContainer>
   );

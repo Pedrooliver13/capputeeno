@@ -16,7 +16,7 @@ export const CardContainer = styled(Link)`
       transform: scale(1.05);
     }
 
-    @media (max-width: ${theme.breakpoints.SM}) {
+    @media (max-width: ${theme.breakpoints.XL}) {
       max-width: 100%;
     }
 

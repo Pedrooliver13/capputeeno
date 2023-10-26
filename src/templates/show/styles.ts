@@ -9,6 +9,7 @@ export const ShowContainer = styled.div`
       gap: 8px;
       margin-top: 2.6rem;
       color: ${theme.colors.gray};
+      font-weight: 400;
     }
   `}
 `;
@@ -41,7 +42,7 @@ export const ProductContent = styled.section`
         max-width: 50rem;
       }
 
-      @media (max-width: ${theme.breakpoints.MD}) {
+      @media (max-width: ${theme.breakpoints.LG}) {
         display: block;
         max-width: 100%;
         height: 250px;
@@ -54,7 +55,7 @@ export const ProductContent = styled.section`
       flex-direction: column;
       color: ${theme.colors['base-text-dark']};
 
-      @media (max-width: ${theme.breakpoints.LG}) {
+      @media (max-width: ${theme.breakpoints.MD}) {
         max-width: 100%;
         width: 100%;
         margin: 1.2rem auto;
@@ -75,9 +76,10 @@ export const ProductContent = styled.section`
       }
 
       &__price {
+        font-family: ${theme.fonts.default};
         font-size: ${theme.textSizes['text-l']};
         color: ${theme.colors['base-text']};
-        font-weight: 900;
+        font-weight: 600;
 
         @media (max-width: ${theme.breakpoints.MD}) {
           font-size: ${theme.textSizes['title-xs']};
