@@ -21,10 +21,10 @@ export const Header = (): ReactElement => {
           <Input />
         </div>
 
-        <div className="content__cart">
+        <Link href="/cart" className="content__cart">
           <span className="content__cart--count">3</span>
           <ShoppingBagOpenIcon size={28} />
-        </div>
+        </Link>
       </div>
     </Styled.HeaderContainer>
   );

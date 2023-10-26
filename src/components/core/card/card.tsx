@@ -1,11 +1,11 @@
+'use client';
+
 // Packages
 import { ReactElement, useState } from 'react';
 import Image from 'next/image';
 import Skeleton from 'react-loading-skeleton';
-import Link from 'next/link';
 
 // Styles
-import 'react-loading-skeleton/dist/skeleton.css';
 import * as Styled from './styles';
 
 export const Card = (): ReactElement => {
