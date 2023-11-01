@@ -15,9 +15,12 @@
           { "path": "zod" },
           { "path": "phosphor-react" },
           { "path": "@emotion" },
-          { "path": "react-toastify" }
+          { "path": "swr" },
+          { "path": "react-toastify" },
+          { "path": "graphql-request" }
         ],
         "Libs": [{ "path": "lib" }],
+        "Services": [{ "path": "services" }],
         "Templates": [{ "path": "templates" }],
         "Pages": [{ "path": "pages/" }],
         "Reducers": [{ "path": "reducer" }, { "path": "action" }],

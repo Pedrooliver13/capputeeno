@@ -7,12 +7,21 @@ export const PaginationContainer = styled.ul`
     justify-content: flex-end;
     margin-top: 2.4rem;
     margin-bottom: 1.8rem;
+    flex: 1;
+    transition: all 1s ease-in-out;
+
+    .disabled {
+      opacity: 0.2;
+      cursor: none;
+      pointer-events: none;
+    }
 
     ul {
       display: flex;
       gap: 2px;
 
-      li {
+      li,
+      a {
         display: flex;
         align-items: center;
         justify-content: center;

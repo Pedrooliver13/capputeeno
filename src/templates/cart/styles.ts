@@ -21,7 +21,10 @@ export const CartContainer = styled.div`
     }
 
     .products {
+      margin-bottom: 2rem;
+
       @media (max-width: ${theme.breakpoints.XL}) {
+        margin-bottom: inherit;
         max-width: 100%;
         width: 100%;
         gap: 20px;
@@ -54,14 +57,6 @@ export const CartContainer = styled.div`
       &__list {
         display: flex;
         flex-direction: column;
-        overflow-x: auto;
-        max-height: 650px;
-
-        @media (max-width: ${theme.breakpoints.XL}) {
-          align-items: center;
-          overflow-y: hidden;
-          max-height: 100%;
-        }
       }
     }
 
@@ -69,7 +64,7 @@ export const CartContainer = styled.div`
       display: flex;
       flex-direction: column;
 
-      min-height: 700px;
+      height: 750px;
       max-width: 35.2rem;
       width: 100%;
       padding: 2.4rem;
@@ -81,7 +76,7 @@ export const CartContainer = styled.div`
 
       @media (max-width: ${theme.breakpoints.XL}) {
         max-width: 100%;
-        min-height: 450px;
+        height: 450px;
       }
 
       &__header {

@@ -2,6 +2,9 @@
 import { useCallback, useState } from 'react';
 import { CaretDown as CaretDownIcon } from 'phosphor-react';
 
+// Contexts
+import { useProductContext } from 'contexts/useProductContext';
+
 // Styles
 import * as Styled from './styles';
 
@@ -19,6 +22,7 @@ export const FilterByPriority = ({
   label,
   options,
 }: FilterDropdownProps): any => {
+  const { handleChangeSortBy, handleChangePage } = useProductContext();
   const [isOpen, setIsOpen] = useState(false);
 
   const handleOpen = useCallback(() => {
@@ -26,7 +30,8 @@ export const FilterByPriority = ({
   }, []);
 
   const handleClick = (value: string) => {
-    console.log('Ativei', value);
+    handleChangeSortBy(value);
+    handleChangePage(0);
     handleOpen();
   };
 

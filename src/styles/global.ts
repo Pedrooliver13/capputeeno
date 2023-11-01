@@ -15,6 +15,7 @@ export const GlobalStyle = createGlobalStyle`
 
   html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
   }
 
   #__next {
@@ -32,6 +33,7 @@ export const GlobalStyle = createGlobalStyle`
     background-color: ${({ theme }): string => theme.colors.background};
     color: ${({ theme }): string => theme.colors['base-text']};
     font-weight: 400;
+    scroll-behavior: smooth;
     --webkit-font-smoothing: antialised;
   }
 

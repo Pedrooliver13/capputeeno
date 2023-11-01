@@ -1,17 +1,18 @@
 // Packages
-import { ReactElement } from 'react';
-import { MagnifyingGlass as MagnifyingGlassIcon } from 'phosphor-react';
+import { ReactElement, InputHTMLAttributes, ReactNode } from 'react';
 
 // Styles
 import * as Styled from './styles';
 
-export const Input = (): ReactElement => {
+interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
+  icon?: ReactNode;
+}
+
+export const Input = (props: InputProps): ReactElement => {
   return (
     <Styled.InputContainer>
-      <input type="text" placeholder="Procurando algo específico?" />
-      <button type="submit">
-        <MagnifyingGlassIcon size={24} />
-      </button>
+      <input {...props} />
+      {props.icon && <button type="submit">{props.icon}</button>}
     </Styled.InputContainer>
   );
 };
