@@ -28,6 +28,7 @@ export const CategoryContainer = styled.div`
         font-size: ${theme.textSizes['text-m']};
         text-transform: uppercase;
         font-weight: 400;
+        cursor: pointer;
 
         @media (max-width: ${theme.breakpoints.MD}) {
           font-size: 1.2rem;
@@ -46,30 +47,6 @@ export const CategoryContainer = styled.div`
           }
         }
       }
-    }
-  `}
-`;
-
-export const ProductsList = styled.section`
-  ${({ theme }) => css`
-    display: flex;
-    gap: 32px;
-    flex-wrap: wrap;
-    margin-top: 1.8rem;
-
-    @media (max-width: ${theme.breakpoints.XL}) {
-      justify-content: center;
-    }
-
-    .message {
-      margin: 0 auto;
-      text-align: center;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      color: ${theme.colors.gray};
-      font-size: ${theme.textSizes['text-m']};
     }
   `}
 `;

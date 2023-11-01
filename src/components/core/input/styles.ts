@@ -36,6 +36,10 @@ export const InputContainer = styled.div`
       &::placeholder {
         font-size: 1.6rem;
         font-weight: 400;
+
+        @media (max-width: ${theme.breakpoints.MD}) {
+          font-size: ${theme.textSizes['text-s']};
+        }
       }
     }
   `}

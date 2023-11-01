@@ -11,17 +11,26 @@ export const CartCardComponent = styled.div`
     overflow: hidden;
     margin-top: 20px;
 
+    @media (max-width: ${theme.breakpoints.XL}) {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 100%;
+    }
+
     @media (max-width: ${theme.breakpoints.MD}) {
       flex-wrap: wrap;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 50rem;
     }
 
     img {
       max-width: 25.6rem;
-      width: 100%;
       object-fit: cover;
 
       @media (max-width: ${theme.breakpoints.MD}) {
         max-width: 100%;
+        width: 100%;
       }
     }
 
@@ -58,10 +67,12 @@ export const CartCardComponent = styled.div`
         font-weight: 400;
         line-height: 18px;
         flex: 1;
+        /* overflow-x: auto; */
       }
 
       &__footer {
         display: flex;
+        align-items: flex-end;
         justify-content: space-between;
 
         select {
@@ -69,6 +80,7 @@ export const CartCardComponent = styled.div`
           height: 40px;
           border-radius: 8px;
           padding: 1rem;
+          cursor: pointer;
 
           color: ${theme.colors['base-text']};
         }

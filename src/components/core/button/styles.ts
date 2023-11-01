@@ -45,5 +45,11 @@ export const ButtonContainer = styled.button<ButtonStyleProps>`
     &:hover {
       filter: brightness(1.2);
     }
+
+    &:disabled {
+      pointer-events: none;
+      cursor: none;
+      opacity: 0.7;
+    }
   `}
 `;

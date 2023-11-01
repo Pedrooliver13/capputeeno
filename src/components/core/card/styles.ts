@@ -1,6 +1,18 @@
 // Packages
-import styled, { css } from 'styled-components';
+import styled, { css, keyframes } from 'styled-components';
 import Link from 'next/link';
+
+const fadeIn = keyframes`
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+    
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+`;
 
 export const CardContainer = styled(Link)`
   ${({ theme }) => css`
@@ -11,12 +23,13 @@ export const CardContainer = styled(Link)`
     background-color: ${theme.colors.white};
     border-radius: 4px;
     transition: all 0.3s ease-in-out;
+    animation: ${fadeIn} 0.5s;
 
     &:hover {
       transform: scale(1.05);
     }
 
-    @media (max-width: ${theme.breakpoints.XL}) {
+    @media (max-width: ${theme.breakpoints.MD}) {
       max-width: 100%;
     }
 
@@ -29,12 +42,7 @@ export const CardContainer = styled(Link)`
         width: 0;
       }
 
-      .skeleton {
-        top: -4px;
-      }
-
-      img,
-      .skeleton {
+      img {
         position: relative;
         max-width: 100%;
         object-fit: cover;

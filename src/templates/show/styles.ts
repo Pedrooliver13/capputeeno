@@ -3,13 +3,15 @@ import styled, { css } from 'styled-components';
 
 export const ShowContainer = styled.div`
   ${({ theme }) => css`
-    .back-button a {
+    .back-button button {
+      border: none;
       display: inline-flex;
       align-items: center;
       gap: 8px;
       margin-top: 2.6rem;
       color: ${theme.colors.gray};
       font-weight: 400;
+      cursor: pointer;
     }
   `}
 `;
@@ -34,7 +36,7 @@ export const ProductContent = styled.section`
 
     img {
       max-width: 64.8rem;
-      width: 100%;
+      width: 'auto';
       border-radius: 4px;
       object-fit: cover;
 

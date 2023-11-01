@@ -1,36 +1,73 @@
+'use client';
+
 // Packages
 import { ReactElement } from 'react';
-import Link from 'next/link';
-import { ArrowCircleLeft as ArrowCircleLeftIcon } from 'phosphor-react';
+import { useRouter } from 'next/navigation';
+import { toast } from 'react-toastify';
 
 // Components
-import { Button, CartCard } from 'components/core';
+import { CartCard } from 'components/shared';
 import { DefaultLayout } from 'components/layout';
+import { Button, BackButton } from 'components/core';
+
+// Contexts
+import { useCartContext } from 'contexts/useCartContext';
+
+// Utils
+import { formatCurrency } from 'utils/formatCurrency';
+
+// Hooks
+import { useCart } from 'hooks/useCart';
+import { useLocalStorage } from 'hooks/useLocalStorage';
 
 // Styles
 import * as Styled from './styles';
 
 export const CartTemplate = (): ReactElement => {
+  const router = useRouter();
+
+  const { updateLocalStorage } = useLocalStorage(
+    '@capputeeno:cart-state-1.0.0',
+    []
+  );
+
+  const { listCart, updateProductInCart } = useCartContext();
+  const {
+    defaultDeliveryValue,
+    totalPriceInCents,
+    totalProductsInCart,
+    totalPriceWithDeliveryInCents,
+  } = useCart();
+
+  const handleClick = () => {
+    updateLocalStorage([]);
+    updateProductInCart([]);
+    router.push('/');
+
+    toast('Compra finalizada com sucesso!', {
+      type: 'success',
+      theme: 'dark',
+    });
+  };
+
   return (
     <DefaultLayout>
       <Styled.CartContainer className="container">
         <section className="products">
-          <div className="back-button">
-            <Link href="/">
-              <ArrowCircleLeftIcon size={24} /> Voltar
-            </Link>
-          </div>
+          <BackButton />
 
           <div className="products__header">
             <div className="products__header--title">SEU CARRINHO</div>
             <p className="products__header--info">
-              Total (3 produtos) <span>R$ 161,00</span>
+              Total ({totalProductsInCart} produtos){' '}
+              <span>{formatCurrency(totalPriceInCents)}</span>
             </p>
           </div>
 
           <div className="products__list">
-            <CartCard />
-            <CartCard />
+            {listCart?.map((product) => (
+              <CartCard key={product?.id} {...product} />
+            ))}
           </div>
         </section>
 
@@ -39,17 +76,25 @@ export const CartTemplate = (): ReactElement => {
           <div className="resume__price">
             <ul>
               <li>
-                Subtotal de produtos <span>R$ 161,00</span>
+                Subtotal de produtos
+                <span>{formatCurrency(totalPriceInCents)}</span>
               </li>
               <li>
-                Entrega <span>R$ 40,00</span>
+                Entrega <span>{formatCurrency(defaultDeliveryValue)}</span>
               </li>
               <li>
-                Total <span>R$ 201,00</span>
+                Total{' '}
+                <span>{formatCurrency(totalPriceWithDeliveryInCents)}</span>
               </li>
             </ul>
 
-            <Button>FINALIZAR A COMPRA</Button>
+            <Button
+              type="button"
+              onClick={handleClick}
+              disabled={listCart.length <= 0}
+            >
+              FINALIZAR A COMPRA
+            </Button>
           </div>
 
           <div className="resume__footer">

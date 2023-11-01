@@ -1,5 +1,3 @@
-'use client';
-
 // Packages
 import { ReactElement } from 'react';
 
