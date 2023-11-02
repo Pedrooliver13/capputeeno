@@ -26,6 +26,7 @@ export const CartCardComponent = styled.div`
 
     img {
       max-width: 25.6rem;
+      width: 100%;
       object-fit: cover;
 
       @media (max-width: ${theme.breakpoints.MD}) {
@@ -36,10 +37,17 @@ export const CartCardComponent = styled.div`
 
     .content {
       display: flex;
+      max-width: 48rem;
+      width: 100%;
       flex-direction: column;
-      padding: 1.6rem;
+      padding: 3.1rem;
       font-weight: 400;
-      gap: 12px;
+      gap: 10px;
+
+      @media (max-width: ${theme.breakpoints.XL}) {
+        max-width: 100%;
+        width: 100%;
+      }
 
       &__header {
         display: flex;
@@ -67,7 +75,9 @@ export const CartCardComponent = styled.div`
         font-weight: 400;
         line-height: 18px;
         flex: 1;
-        /* overflow-x: auto; */
+        overflow-x: auto;
+
+        max-height: 55px;
       }
 
       &__footer {
