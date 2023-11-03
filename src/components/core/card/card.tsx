@@ -15,7 +15,7 @@ type CardProps = Product;
 
 export const Card = (props: CardProps): ReactElement => {
   return (
-    <Styled.CardContainer href={`/show/${props?.id}`}>
+    <Styled.CardContainer href={`/show/${props?.id}`} data-cy="card">
       <div className="image">
         <Image
           src={props?.image_url}

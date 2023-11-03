@@ -18,8 +18,9 @@ export const FilterBar = (): ReactElement => {
 
   return (
     <Styled.CategoryContainer className="container">
-      <ul className="category">
+      <ul className="category" data-cy="category-filter">
         <li
+          id="category-all"
           className={!category ? 'active' : ''}
           onClick={() => {
             handleChangePage(0);
@@ -29,6 +30,7 @@ export const FilterBar = (): ReactElement => {
           Todos os produtos
         </li>
         <li
+          id="category-shirts"
           className={category === 't-shirts' ? 'active' : ''}
           onClick={() => {
             handleChangePage(0);
@@ -38,6 +40,7 @@ export const FilterBar = (): ReactElement => {
           Camisetas
         </li>
         <li
+          id="category-mugs"
           className={category === 'mugs' ? 'active' : ''}
           onClick={() => {
             handleChangePage(0);
