@@ -21,6 +21,16 @@ $ npm run dev ou yarn dev
 
 Acesse o reponsitorio do back-end nesse link: https://github.com/Pedrooliver13/capputeeno-api, e rode ele ao mesmo tempo do front
 
+## :information_source: Rodar os testes
+
+Siga os passos a seguir
+
+```bash
+# Rode o app e o cypress
+$ npm run test:e2e ou yarn test:e2e
+
+```
+
 ## :information_source: Features
 
 - Catálogo de produtos com paginação
@@ -36,8 +46,8 @@ Acesse o reponsitorio do back-end nesse link: https://github.com/Pedrooliver13/c
 -  [Typescript](https://www.typescriptlang.org/)
 -  [Styled-components](https://www.styled-components.com/)
 -  [Phosphor](https://phosphoricons.com/)
--  [immer](https://immerjs.github.io/immer/)
-
+-  [Immer](https://immerjs.github.io/immer/)
+-  [Cypress](https://docs.cypress.io/guides/overview/why-cypress)
 ---
 
 Made with ♥ by Pedro Oliveira
