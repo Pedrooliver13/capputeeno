@@ -33,7 +33,7 @@ export const Header = (): ReactElement => {
           <SearchInput />
         </div>
 
-        <Link href="/cart" className="content__cart">
+        <Link href="/cart" className="content__cart" data-cy="cart">
           {totalProductsInCart > 0 && (
             <span className="content__cart--count">{totalProductsInCart}</span>
           )}

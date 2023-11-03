@@ -56,7 +56,7 @@ export const CartCard = (props: CartCardProps): ReactElement => {
   };
 
   return (
-    <Styled.CartCardComponent>
+    <Styled.CartCardComponent data-cy="cart-card">
       <Image
         src={props?.image_url}
         alt={props?.category}

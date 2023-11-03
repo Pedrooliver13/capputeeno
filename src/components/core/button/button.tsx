@@ -16,7 +16,7 @@ export const Button = ({
   ...props
 }: ButtonProps): ReactElement => {
   return (
-    <Styled.ButtonContainer {...props}>
+    <Styled.ButtonContainer {...props} data-cy="button">
       {startIcon && startIcon}
       {children}
     </Styled.ButtonContainer>

@@ -1,0 +1,93 @@
+{
+  "data": {
+    "allProducts": [
+      {
+        "id": "fedf091d-a34b-4406-91b1-42e5224798b0",
+        "name": "Caneca de cerâmica rústica",
+        "image_url": "https://storage.googleapis.com/xesque-dev/challenge-images/caneca-06.jpg",
+        "category": "mugs",
+        "price_in_cents": 4488
+      },
+      {
+        "id": "77403a1e-aedb-41a4-a36d-f98769176d3c",
+        "name": "Caneca Black Ring",
+        "image_url": "https://storage.googleapis.com/xesque-dev/challenge-images/caneca-04.jpg",
+        "category": "mugs",
+        "price_in_cents": 7778
+      },
+      {
+        "id": "7e12f589-59d2-409a-9ecb-3deaef356323",
+        "name": "Camiseta Outcast",
+        "image_url": "https://storage.googleapis.com/xesque-dev/challenge-images/camiseta-06.jpg",
+        "category": "t-shirts",
+        "price_in_cents": 9676
+      },
+      {
+        "id": "3bebcbd0-8ddc-48f3-9334-9bd9c05e0940",
+        "name": "Caneca de cerâmica rústica",
+        "image_url": "https://storage.googleapis.com/xesque-dev/challenge-images/caneca-06.jpg",
+        "category": "mugs",
+        "price_in_cents": 2282
+      },
+      {
+        "id": "529eba75-228d-49b2-9a7f-df3a9d64df31",
+        "name": "Caneca Decaf! P&Co",
+        "image_url": "https://storage.googleapis.com/xesque-dev/challenge-images/caneca-02.jpg",
+        "category": "mugs",
+        "price_in_cents": 2644
+      },
+      {
+        "id": "42f297b2-74d0-46b8-9c58-c1d64b1a069b",
+        "name": "Camiseta DREAMER",
+        "image_url": "https://storage.googleapis.com/xesque-dev/challenge-images/camiseta-01.jpg",
+        "category": "t-shirts",
+        "price_in_cents": 2498
+      },
+      {
+        "id": "0d26b0e3-4d60-4efe-8b04-121a0a335ee4",
+        "name": "Camiseta Outcast",
+        "image_url": "https://storage.googleapis.com/xesque-dev/challenge-images/camiseta-06.jpg",
+        "category": "t-shirts",
+        "price_in_cents": 5909
+      },
+      {
+        "id": "1c209bc5-1b51-4c19-aa61-48f1b1dcaef0",
+        "name": "Camiseta Ramones",
+        "image_url": "https://storage.googleapis.com/xesque-dev/challenge-images/camiseta-04.jpg",
+        "category": "t-shirts",
+        "price_in_cents": 6771
+      },
+      {
+        "id": "c518dca0-20ac-4ec1-a77a-ee5bf77d8a6a",
+        "name": "Camiseta Broken Saints",
+        "image_url": "https://storage.googleapis.com/xesque-dev/challenge-images/camiseta-03.jpg",
+        "category": "t-shirts",
+        "price_in_cents": 2110
+      },
+      {
+        "id": "1dd90a00-a616-4828-92c5-9256a0b8babf",
+        "name": "Camiseta Broken Saints",
+        "image_url": "https://storage.googleapis.com/xesque-dev/challenge-images/camiseta-03.jpg",
+        "category": "t-shirts",
+        "price_in_cents": 8964
+      },
+      {
+        "id": "3d18bd73-f91d-4d00-ac8f-d5ebd6235a9f",
+        "name": "Caneca de cerâmica rústica",
+        "image_url": "https://storage.googleapis.com/xesque-dev/challenge-images/caneca-06.jpg",
+        "category": "mugs",
+        "price_in_cents": 4466
+      },
+      {
+        "id": "c8d7f8c4-71e2-42ed-a1df-b8471b9590b3",
+        "name": "Caneca The Grounds",
+        "image_url": "https://storage.googleapis.com/xesque-dev/challenge-images/caneca-05.jpg",
+        "category": "mugs",
+        "price_in_cents": 8206
+      }
+    ],
+    "total": {
+      "count": 60
+    }
+  }
+}
